@@ -1,0 +1,15 @@
+express → web server
+
+mysql2 → MySQL connection
+
+bcrypt → password hashing
+
+jsonwebtoken → JWT auth
+
+dotenv → environment variables
+
+cors → frontend-backend communication
+
+cookie-parser → read cookies (JWT)
+
+nodemon → auto-restart server
