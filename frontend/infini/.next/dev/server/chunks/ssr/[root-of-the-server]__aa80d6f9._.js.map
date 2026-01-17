@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/Infini/frontend/infini/app/page.jsx"],"sourcesContent":["import Hero from \"../components/Hero\";\r\n// import from \"../components/Hero\";\r\n// import CategoryList from \"../components/CategoryList\";\r\n// import FeaturedProducts from \"../components/FeaturedProducts\";\r\n// import PromoBanner from \"../components/PromoBanner\";\r\n\r\n\r\nexport default function Home() {\r\n  return (\r\n    <div className=\"space-y-10\">\r\n      <Hero />\r\n      <CategoryList />\r\n      <FeaturedProducts />\r\n      <PromoBanner />\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;;;;AAOe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;0BACD,8OAAC;;;;;;;;;;;AAGP"}}]
-}

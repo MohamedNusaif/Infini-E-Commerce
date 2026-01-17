@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/Infini/frontend/infini/app/layout.tsx"],"sourcesContent":["import \"./globals.css\";\r\nimport type { Metadata } from \"next\";\r\nimport React from \"react\";\r\nimport Navbar from \"./components/Navbar\"; \r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Infini\",\r\n  description: \"Welcome to Infini\",\r\n};\r\n\r\ninterface RootLayoutProps {\r\n  children: React.ReactNode;\r\n}\r\n\r\nexport default function RootLayout({ children }: RootLayoutProps) {\r\n  return (\r\n    <html lang=\"en\">\r\n      \r\n      <body>\r\n        \r\n        {children}\r\n        </body>\r\n    </html>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;AAKO,MAAM,WAAqB;IAChC,OAAO;IACP,aAAa;AACf;AAMe,SAAS,WAAW,EAAE,QAAQ,EAAmB;IAC9D,qBACE,8OAAC;QAAK,MAAK;kBAET,cAAA,8OAAC;sBAEE;;;;;;;;;;;AAIT"}},
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///D:/Infini/frontend/infini/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
