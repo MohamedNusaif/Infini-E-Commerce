@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
 import Navbar from "./components/Navbar"; 
+import { CartProvider } from "./context/CartContext";
+
 
 export const metadata: Metadata = {
   title: "Infini",
@@ -17,9 +19,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       
       <body>
+        <CartProvider>
         <Navbar/>
         {children}
-        </body>
+        </CartProvider>
+      </body>
     </html>
   );
 }
