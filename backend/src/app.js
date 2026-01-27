@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import swaggerUi from "swagger-ui-express";
+import swaggerSpec from "../swagger.js";
 
 import authRoutes from "./routes/auth.routes.js";
 import productRoutes from "./routes/product.routes.js"; 
@@ -11,16 +13,18 @@ const app = express();
 /* ---------- MIDDLEWARE ---------- */
 app.use(express.json()); // parse JSON body
 app.use(cookieParser());
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // Next.js frontend
+    origin: "http://localhost:5000",// Next.js frontend
     credentials: true,
   })
 );
 
 /* ---------- ROUTES ---------- */
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use ("/products", productRoutes);
 app.use("/orders", orderRoutes);
 
