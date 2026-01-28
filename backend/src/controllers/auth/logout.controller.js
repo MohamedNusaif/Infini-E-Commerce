@@ -1,7 +1,9 @@
+import { db } from "../../config/db.js";
+
 const logout = async (req, res) => {
+
   try {
     const token = req.cookies?.refreshToken;
-    console.log("Refresh token:", token);
 
     if (token) {
       await db.query(
