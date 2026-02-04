@@ -29,12 +29,12 @@ import { generateAccessToken, generateRefreshToken } from "../../utils/jwt.js";
 
   res.cookie("accessToken", accessToken, {
     httpOnly: true,
-    secure: true,
+    secure: false,
   });
 
   res.cookie("refreshToken", refreshToken, {
     httpOnly: true,
-    secure: true,
+    secure: false,
   });
 
   res.json({ message: "Login successful" });

@@ -18,7 +18,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(
   cors({
-    origin: "http://localhost:5000",// Next.js frontend
+    origin: "http://localhost:3000",// Next.js frontend
     credentials: true,
   })
 );
