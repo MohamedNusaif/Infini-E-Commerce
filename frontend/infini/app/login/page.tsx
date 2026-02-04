@@ -26,13 +26,17 @@ export default function Login() {
     setError("");
 
     try {
+      // ✅ FIX: add await here
       const res = await fetch("http://localhost:5000/api/auth/login", {
         method: "POST",
-        // credentials: "include", // ⭐ REQUIRED for cookies
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        credentials: "include", // ✅ IMPORTANT for cookies
+        body: JSON.stringify({
+          email: formData.email,
+          password: formData.password,
+        }),
       });
 
       const data = await res.json();
@@ -44,7 +48,7 @@ export default function Login() {
       // ✅ Cookie is now set by backend
       router.push("/dashboard");
     } catch (err: any) {
-      setError(err.message);
+      setError(err.message || "Something went wrong");
     } finally {
       setIsLoading(false);
     }
